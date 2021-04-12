@@ -23,7 +23,7 @@ let pTags = document.querySelectorAll("p");
 pTags.forEach((tag) => {
   tag.style.color = "red";
   tag.classList.replace("paragraph", "text");
-});²
+});
 
 // ex-1 / D
 let header = document.getElementById("header");
@@ -38,7 +38,7 @@ for (let i = 0; i < 4; i++) {
   newLi.textContent = `Ceci est l'élément n°${i}`;
   newLi.setAttribute("data-nul", i + 1);
 
-// newLi.dataset.num = i + 1;
+  // newLi.dataset.num = i + 1;
   newUl.appendChild(newLi);
 }
 
