@@ -7,9 +7,7 @@ console.log(footer);
 
 // ex - 1 / B
 let newP = document.createElement("p");
-let textP = document.createTextNode(
-  "Ceci est un contenu <strong>très important</strong>"
-).innerHTML;
+
 let main = document.querySelector("main");
 
 newP.innerHTML = " Ceci est un contenu <strong>très important</strong>";
@@ -25,9 +23,7 @@ let pTags = document.querySelectorAll("p");
 pTags.forEach((tag) => {
   tag.style.color = "red";
   tag.classList.replace("paragraph", "text");
-});
-
-console.log(pTags);
+});²
 
 // ex-1 / D
 let header = document.getElementById("header");
@@ -41,6 +37,8 @@ for (let i = 0; i < 4; i++) {
   newLi.classList.add("list_element");
   newLi.textContent = `Ceci est l'élément n°${i}`;
   newLi.setAttribute("data-nul", i + 1);
+
+// newLi.dataset.num = i + 1;
   newUl.appendChild(newLi);
 }
 
